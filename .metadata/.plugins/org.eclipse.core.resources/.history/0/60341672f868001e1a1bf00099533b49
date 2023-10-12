@@ -1,0 +1,18 @@
+package com.leo.crud_teste02.controllers;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.leo.crud_teste02.entities.Telefone;
+
+@Controller
+public class TelefoneController {
+	
+	@GetMapping("/Telefone")
+	public List<Telefone> mostrarTodosTelefones() {
+		
+	}
+
+}

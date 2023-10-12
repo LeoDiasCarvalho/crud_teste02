@@ -1,0 +1,28 @@
+package com.leo.crud_teste02.entities;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode
+@Data
+public class Telefone {
+	
+	@Id
+	@Column(name = "id_telefone")
+	
+	private Long id_telefone;
+	
+	private String tel_principal;
+	
+	@Column(name = "tel_recado", length = 11)
+	private String tel_recado;
+
+}

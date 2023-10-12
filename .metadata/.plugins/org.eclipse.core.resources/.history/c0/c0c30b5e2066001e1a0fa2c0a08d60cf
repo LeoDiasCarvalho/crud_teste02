@@ -1,0 +1,20 @@
+package com.leo.crud_teste02.entities;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode
+@Data
+public class Telefone {
+	
+	private Long id_telefone;
+	private String tel_principal;
+	private String tel_recado;
+
+}
